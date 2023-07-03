@@ -6,12 +6,15 @@
   margin: 10px;
   padding: 20px;
   width: 100%;
+  font-weight: 500;
   max-height: 400px;
   min-width: 100px;
-  background-color: white; /* Changed to white */
+  background-color: white;
   z-index: 1;
-  position: relative; /* Added position relative */
-  bottom: -30px; /* Adjust the value to your preference */
+}
+
+.product__rating {
+  display: flex;
 }
 
 .product > img {
@@ -22,16 +25,11 @@
 }
 
 .product > button {
-  background: #f7ca00;
+  background: #f0c14b;
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
-  cursor: pointer;
-}
-
-.product__rating {
-  display: flex;
 }
 
 .product__price {
@@ -39,7 +37,6 @@
 }
 
 .product__info {
-  text-align: left;
   height: 100px;
   margin-bottom: 15px;
 }

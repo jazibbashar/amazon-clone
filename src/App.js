@@ -8,6 +8,7 @@ import Subtotal from "./Subtotal";
 import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
+import Payment from "./Payment";
 
      function App() {
      const [{},dispatch]=useStateValue();
@@ -41,6 +42,7 @@ import { useStateValue } from "./StateProvider";
           <Route path="/login" element={<Login/>} />
           <Route path="/" element={<Home />} />
           <Route path="/checkout" element={<Checkout/>} />
+          <Route path="/payment" element={<Payment/>} />
         </Routes>
       </div>
     </Router>
